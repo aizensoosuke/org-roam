@@ -175,8 +175,9 @@ ORIG-PATH is the path where the CONTENT originated."
                                           'file-from file-from
                                           'file-from-point (plist-get props :point))
                             "")
-                          "\n\n"))))))
-      (insert "\n\n* No ref backlinks!"))))
+                          "\n\n")))))
+          (insert "hahaha"))
+      (insert "\n\n* No ref backlinks!")))) 
 
 (defun org-roam-buffer--insert-backlinks ()
   "Insert the org-roam-buffer backlinks string for the current buffer."
@@ -213,7 +214,8 @@ ORIG-PATH is the path where the CONTENT originated."
                            'file-from file-from
                            'file-from-point (plist-get prop :point))
                         "")
-                      "\n\n"))))
+                      "\n\n")))
+          (insert "haha"))
       (insert "\n\n* No backlinks!"))))
 
 (defun org-roam-buffer-update ()
